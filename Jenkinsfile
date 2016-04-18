@@ -13,7 +13,7 @@ if (env.BRANCH_NAME.startsWith("FR"))
     load DEFECT_BRANCH/flow.groovy
 else if (env.BRANCH_NAME.startsWith("DR"))
     load DEFECT_BRANCH/flow.groovy
-else if (env.BRANCH_NAME.startsWith("MASTER"))
+else if (env.BRANCH_NAME.startsWith("master"))
 	load flow.groovy
 else
 	throw new Exception("Unknown Branch")
