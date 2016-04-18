@@ -10,11 +10,21 @@ echo env.JOB_NAME
 echo env.BRANCH_NAME
 
 if (env.BRANCH_NAME.startsWith("FR"))
-    load 'DEFECT_BRANCH/flow.groovy'
+    node
+    {
+    	load 'DEFECT_BRANCH/flow.groovy'
+    }
 else if (env.BRANCH_NAME.startsWith("DR"))
-    load 'DEFECT_BRANCH/flow.groovy'
+    node
+    {
+    	load 'DEFECT_BRANCH/flow.groovy'
+    }
 else if (env.BRANCH_NAME.startsWith("master"))
-	load 'flow.groovy'
+	node
+	{
+		load 'flow.groovy'
+	}
 else
 	throw new Exception("Unknown Branch")
+
     
