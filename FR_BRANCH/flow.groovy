@@ -1,1 +1,2 @@
-echo env.BRANCH_NAME
+echo "Loading FR Branch"
+env.BRANCH_NAME
