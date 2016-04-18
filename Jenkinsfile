@@ -1,8 +1,7 @@
 stage 'Build'
 node{
     // COMPILE AND JUNIT
-    def src = 'http://github.com/hdharia/spring-petclinic.git'
-    git url: src
+    checkout scm
     echo "INFO - Ending build phase"
 }
 
