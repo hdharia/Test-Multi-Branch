@@ -6,7 +6,8 @@ node{
     echo "INFO - Ending build phase"
 }
 
-echo "MASTER: " env.BRANCH_NAME
+echo env.JOB_NAME 
+echo env.BRANCH_NAME
 
 if (env.BRANCH_NAME.startsWith("FR"))
     load DEFECT_BRANCH/flow.groovy
