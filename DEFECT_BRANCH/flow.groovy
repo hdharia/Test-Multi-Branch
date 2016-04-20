@@ -18,4 +18,16 @@ node()
 echo "Performing a dev test"
 }
 
+stage "QA Deploy"
+node()
+{
+echo "Performing a QA deploy"
+}
+
+stage "QA Test"
+node()
+{
+echo "Performing a QA test"
+}
+
 
