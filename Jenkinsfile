@@ -1,8 +1,6 @@
-stage 'Build'
+stage 'Checkout Code'
 node{
-    // COMPILE AND JUNIT
     checkout scm
-    echo "INFO - Ending build phase"
 }
 
 echo env.JOB_NAME 
