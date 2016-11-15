@@ -5,7 +5,7 @@ stage 'Build'
 node(){
     // COMPILE AND JUNIT
     
-    ensureMaven()
+    //ensureMaven()
     //sh 'mvn clean install'
     //stash includes: 'target/petclinic.war', name: 'war'
     //step $class: 'hudson.tasks.junit.JUnitResultArchiver', testResults: 'target/surefire-reports/*.xml'
