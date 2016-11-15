@@ -22,6 +22,6 @@ else if (env.BRANCH_NAME.startsWith("master"))
 		load 'flow.groovy'
 	}
 else
-	throw new Exception("Unknown Branch")
+	throw new Exception("Unknown Bra nch")
 
     
